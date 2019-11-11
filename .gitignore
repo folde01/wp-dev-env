@@ -1,0 +1,7 @@
+.vagrant
+
+docker-volumes/wordpress_db/*
+!docker-volumes/wordpress_db/.gitkeep
+
+docker-volumes/wordpress_files/*
+!docker-volumes/wordpress_files/.gitkeep
