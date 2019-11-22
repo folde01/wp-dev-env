@@ -1,0 +1,7 @@
+20191115
+
+Restarting host brings up containers w/o volumes, but the volumes appear after this:
+
+sudo docker-compose stop
+sudo docker-compose up --remove-orphans
+

@@ -6,6 +6,8 @@ Vagrant.configure("2") do |config|
 
   # folder settings
     config.vm.synced_folder "../docker-volumes/wordpress_db", "/home/vagrant/wordpress_db", :owner => "999", :group => "999"
+    #config.vm.synced_folder "~/wp-projects/docker-volumes/wordpress_db", "/home/vagrant/wordpress_db", :owner => "999", :group => "999"
+    config.vm.synced_folder "~/wp-projects/docker-volumes/wordpress_db", "/home/vagrant/wordpress_db2", :owner => "999", :group => "999"
     config.vm.synced_folder "../docker-volumes/wordpress_files", "/home/vagrant/wordpress_files", :group => "33"
     config.vm.synced_folder "../docker-compose", "/home/vagrant/docker-compose"
 end
